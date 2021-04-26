@@ -1,13 +1,14 @@
-import Banner from './components/Banner/Banner'
+import Banner from './components/Banner/Banner';
+import Paragraph from './components/Paragraph/Paragraph';
 
 function App() {
   return (
     <div>
       <Banner 
-        heading={'Heading'}
-        subtitle={'This is a subtitle'}
-        img='https://source.unsplash.com/random'>
+        heading={'Kurt Peniket'}
+        subtitle={'Computer Programmer'}>
       </Banner>
+      <Paragraph text='Some text here...'/>
     </div>
   );
 }
