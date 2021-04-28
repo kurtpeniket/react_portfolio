@@ -50,7 +50,7 @@ class Example extends React.Component {
       <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
         <Styles img={this.props.img}>
           <div onMouseEnter={this.handleClick}>
-            <a href={this.props.link}>
+            <a href={this.props.link} target='_blank'>
               <div className={'card'}>
                 {this.props.children}
                 {this.props.front}
@@ -61,7 +61,7 @@ class Example extends React.Component {
 
         <Styles>
           <div onMouseLeave={this.handleClick}>
-            <a href={this.props.link}>
+            <a href={this.props.link} target='_blank'>
               <div className={'card'}>
                 {this.props.children}
                 {this.props.back}

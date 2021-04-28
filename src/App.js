@@ -9,7 +9,7 @@ function App() {
         heading={'Kurt Peniket'}
         subtitle={'Computer Programmer'}>
       </Banner>
-      <Paragraph text='Some text here...'/>
+      {/* <Paragraph text='Some text here...'/> */}
       <Gallery />
     </div>
   );
