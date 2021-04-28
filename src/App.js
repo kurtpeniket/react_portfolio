@@ -1,4 +1,5 @@
 import Banner from './components/Banner/Banner';
+import Caption from './components/Caption/Caption';
 import Paragraph from './components/Paragraph/Paragraph';
 import Gallery from './components/Gallery/Gallery';
 
@@ -9,7 +10,7 @@ function App() {
         heading={'Kurt Peniket'}
         subtitle={'Computer Programmer'}>
       </Banner>
-      {/* <Paragraph text='Some text here...'/> */}
+      <Caption />
       <Gallery />
     </div>
   );
