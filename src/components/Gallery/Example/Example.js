@@ -65,6 +65,7 @@ class Example extends React.Component {
               <div className={'card'}>
                 {this.props.children}
                 {this.props.back}
+                {this.props.children}
               </div>
             </a>
           </div>

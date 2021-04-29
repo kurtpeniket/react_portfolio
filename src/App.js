@@ -1,15 +1,40 @@
 import Banner from './components/Banner/Banner';
 import Caption from './components/Caption/Caption';
-// import Paragraph from './components/Paragraph/Paragraph';
 import Gallery from './components/Gallery/Gallery';
 import Subheading from './components/Subheading/Subheading';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const Style = styled.div`
+  .flex {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:visited {
+    color: transparent;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0px 600px;
+    color: rgba(0,0,0,0.3);
+  }
   `
   return (
     <div>
@@ -18,16 +43,19 @@ function App() {
         subtitle={'Computer Programmer'}
       />
       <Style>
+            <div className={'links'}>
+              <a href='https://github.com/kurtpeniket' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faGithub} size='2x'/></a>
+              <a href='https://github.com/kurtpeniket' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faLinkedin} size='2x'/></a>
+              <a href='https://github.com/kurtpeniket' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faEnvelope} size='2x'/></a>
+            </div>
+        <div className={'flex'}>
           <Caption 
-            heading={'About me...'}
-            content={'content...'}
+            heading={'Hi, my name is Kurt...'}
+            content={'I\'m a full stack developer with a love of coding and self-improvement. Working efficiently and accurately has enabled me to recently complete Le Wagon\'s intensive web development bootcamp upgrading my skills in front and backend technologies. My other interests include reading and studying great books, continuing to learn Russian, keeping fit and otherwise trying to optimise various aspects of my life.'}
             img={'profile.jpg'}
-          />
-          <Caption 
-            heading={'tech'}
-            content={'content...'}
-            img={'tech_stack.svg'}
-          />
+            >
+          </Caption>
+        </div>
       </Style>
       <Subheading
         heading={'Portfolio'}

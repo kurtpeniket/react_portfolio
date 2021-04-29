@@ -7,6 +7,12 @@ const Gallery = (props) => {
   return (
     <div className={'cards'}>
       <Example
+        link='https://corbltd.herokuapp.com/' 
+        img='corb_landing.png' 
+        front='Corb Limited'
+        back={<Paragraph text='Website for an electrical contracting company in Telford. Built using Ruby on Rails and Bootstrap for CSS.'/>}
+      />
+      <Example
         link='https://www.illuminate-app.tech/' 
         img='https://i.ibb.co/QfXWytN/illuminate1.png' 
         front='Illuminate'
@@ -24,14 +30,18 @@ const Gallery = (props) => {
         front='Retro Snake Game'
         back={<Paragraph text='A full working game and dynamic high score board written using only HTML/CSS and JavaScript.'/>}
       />
+      <Example 
+        link='https://kurts-cocktails.herokuapp.com/'
+        img='cocktail.png'
+        front='Cocktail Manager'
+        back={<Paragraph text='A working full stack cocktail manager built with Ruby on Rails. Full interactive with persistant instances because of backend relational database.' />}
+      />
       <Example
         link='https://kurtpeniket.github.io/rota_generator/' 
         img='https://i.ibb.co/R21wb20/Screenshot-from-2021-04-28-16-36-18.png' 
         front='Rota Generator'
         back={<Paragraph text='Work in progress, built with vanila JavaScript and Bootstrap. Includes a custom validation function to detect duplicates in class and ignore them.'/>}
       />
-      <Example />
-      <Example />
 
     </div>
   )

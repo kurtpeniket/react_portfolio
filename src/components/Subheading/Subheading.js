@@ -6,6 +6,7 @@ const subheading = (props) => {
     h2 {
       color: white;
       text-align: center;
+      text-decoration: underline;
     }
   `
   return (
