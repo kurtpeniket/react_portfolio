@@ -4,16 +4,15 @@ import styled from 'styled-components';
 const caption = (props) => {
   const CardStyle = styled.div`
     .container {
-      margin-top: 5%;
       padding: 20px;
-      display: flex;
-      justify-content: center;
+      // display: flex;
+      // justify-content: center;
     }
     
     .content {
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
       background-color: #E0E0E0;
-      width: 300px;
+      width: 30vw;
       position: relative;
       border-radius: 8px;
       padding: 20px;
@@ -32,10 +31,11 @@ const caption = (props) => {
       <div className={'container'}>
           <div className={'content'}>
             <div>
-              <h1>Caption</h1>
-              <p>Paragraph</p>
+              <h2>{props.heading}</h2>
+              <p>{props.content}</p>
+              <p>{props.content}</p>
             </div>
-            <img src='profile.jpg' alt='avatar'/>
+            <img src={props.img} alt='avatar'/>
           </div>
       </div>
     </CardStyle>
