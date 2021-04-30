@@ -5,33 +5,33 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-const banner = (props) => {
-  const Style = styled.div`
-    .title {
-      font-size: 36px;
-      color: white;
-    }
+const Style = styled.div`
+  .title {
+    font-size: 36px;
+    color: white;
+  }
 
-    a {
-      color: white;
-    }
-  
-    a:visited {
-      color: white;
-    }
-  
-    a:hover {
-      color: black;
-    }
-  
-    .links {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      height: 50px;
-      color: rgba(0,0,0,0.3);
-    }
-  `
+  a {
+    color: white;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  a:hover {
+    color: black;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    color: rgba(0,0,0,0.3);
+  }
+`
+const banner = (props) => {
   return (
     <Style>
       <div className={'title'}>
@@ -43,9 +43,9 @@ const banner = (props) => {
           <h2>{props.heading}</h2>
           <p>{props.subtitle}</p>
           <div className={'links'}>
-              <a href='https://github.com/kurtpeniket' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faGithub} size=''/></a>
-              <a href='https://github.com/kurtpeniket' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faLinkedin} size=''/></a>
-              <a href='https://github.com/kurtpeniket' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faEnvelope} size=''/></a>
+              <a href='https://github.com/kurtpeniket' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faGithub} /></a>
+              <a href='https://www.linkedin.com/in/kurtpeniket' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faLinkedin} /></a>
+              <a href='mailto:kurt.peniket@gmail.com' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faEnvelope} /></a>
           </div>
         </LazyHero>
       </div>

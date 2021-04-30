@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Style = styled.div`
+  h2 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+  }
+`
 const subheading = (props) => {
-  const Style = styled.div`
-    h2 {
-      color: white;
-      text-align: center;
-      text-decoration: underline;
-    }
-  `
   return (
     <Style>
       <div>

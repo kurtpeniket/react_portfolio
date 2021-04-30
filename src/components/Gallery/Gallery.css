@@ -4,6 +4,38 @@
     grid-gap: 16px;
     padding: 30px;
   }
+
+  .logos {
+    text-align: center;
+  }
+
+  .react {
+    color: #61DBFB;
+  }
+
+  .css {
+    color: #264de4;
+  }
+
+  .ruby {
+    color: #820C02;
+  }
+
+  .html {
+    color: #f06528;
+  }
+
+  .bootstrap {
+    color: #563d7c;
+  }
+
+  .js {
+    color: #f0db4f;
+  }
+
+  .sql {
+    color: #1c79d6;
+  }
   
   @media (min-width: 100px) and (max-width: 575px) {
     .cards {
