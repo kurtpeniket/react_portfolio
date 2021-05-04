@@ -48,5 +48,20 @@
 
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: process.env.API_KEY,
+        authDomain: "portfolio-efabd.firebaseapp.com",
+        projectId: "portfolio-efabd",
+        storageBucket: "portfolio-efabd.appspot.com",
+        messagingSenderId: "60532789046",
+        appId: "1:60532789046:web:a2636ae456afa612ec2d97",
+        measurementId: "G-YWHYYSZCD6"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics()
+    </script>
   </body>
 </html>
