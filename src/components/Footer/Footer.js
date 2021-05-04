@@ -65,7 +65,7 @@ const footer = (props) => {
           <a href='mailto:kurt.peniket@gmail.com' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faEnvelope} /></a>
         </div>
         <div className={'footer-copyright'}>
-          This website was made by me using React <FontAwesomeIcon className={'react'} icon={faReact} size='lg' /> and some CSS <FontAwesomeIcon className={'css'} icon={faCss3Alt} size='lg' />
+          This website was made by me using React <FontAwesomeIcon className={'react'} icon={faReact} size='lg' />
         </div>
       </div>
     </Style>
