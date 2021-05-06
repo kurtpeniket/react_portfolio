@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCss3Alt, faGithub, faLinkedin, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Style = styled.div`
